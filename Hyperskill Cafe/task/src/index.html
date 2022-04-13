@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
     <title>Hyperskill Cafe</title>
-    <script async src="code.js"></script>
 </head>
 <body>
     <header>
@@ -125,9 +124,81 @@
                     </div>
                 </div>
             </div>
+            <div id=reviews class="container-fluid bg-light p-0">
+                <h2 class="display-5 pt-5 px-5 fw-bold">Reviews From Our Customers</h2>
+                <div class="px-5 my-3">
+                    <button class="btn btn-primary"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseReview"
+                            aria-expanded="false"
+                            aria-controls="collapseReview"
+                    >Add Review</button>
+                </div>
+                <div class="collapse" id=collapseReview>
+                    <div class="px-5">
+                        <div class="card card-body">
+                            <form class="row g-3" id="reviewForm">
+                                <div class="col-md-4">
+                                    <label class="form-label" for="reviewTitle">Title</label>
+                                    <input class="form-control" id=reviewTitle type="text" required="required"/>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label" for="reviewText">Comment</label>
+                                    <input class="form-control" id=reviewText type="text" required="required"/>
+                                </div>
+                                <div class="col-md-4">
+                                    <label class="form-label" for="reviewName">Name</label>
+                                    <input class="form-control" id=reviewName type="text"/>
+                                </div>
+                                <div class="col-12">
+                                    <button id=reviewButton class="btn btn-primary" type="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-5">
+                    <div id=reviewsRow class="row">
+                        <div class="col-lg-4 col-md-6 py-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h4 class="card-title">Fine place!</h4>
+                                    <blockquote class="blockquote mb-0">
+                                        <p>Some text 1</p>
+                                        <footer class="text-end blockquote-footer"><i>Loren 1</i></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 py-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h4 class="card-title">That's something..</h4>
+                                    <blockquote class="blockquote mb-0">
+                                        <p>Some text 2</p>
+                                        <footer class="text-end blockquote-footer"><i>Loren 2</i></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 py-3">
+                            <div class="card h-100">
+                                <div class="card-body">
+                                    <h4 class="card-title">What it is?</h4>
+                                    <blockquote class="blockquote mb-0">
+                                        <p>Some text 3</p>
+                                        <footer class="text-end blockquote-footer"><i>Loren 3</i></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
