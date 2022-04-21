@@ -1,5 +1,5 @@
 # hscafe
-JBA JS project Hyperskill Cafe
+JBA JS project <b>Hyperskill Cafe</b>
 ## Learning outcomes
 Use HTML, CSS, and JavaScript to build a semi-dynamic website. Learn about responsive web design and complex navigation. Last but not the least, learn how to manipulate the Document Object Model (DOM) with JavaScript to render dynamic content.
 
